@@ -1,0 +1,167 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+  text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+.name {
+	font-size: 1.25em;
+  margin: 0;
+  }
+
+.main-nav a {
+  display: block;
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+.main-footer,
+.banner,
+.main-header {
+  text-align: center;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.col {
+  padding: 0 1em;
+}
+
+.main-header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+  padding: 3.2em 0;
+  margin-bottom: 60px;
+}
+
+.main-footer {
+  width: 100%;
+	background: #d9e4ea;
+	padding: 2em 0;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+.headline {
+  margin-bottom: 0;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.secondary,
+.primary {
+  float: left;
+  width: 50%;
+}
+
+.main-nav li {
+  float: right;
+  display: inline-block;
+  padding: 0 1.5em;
+}
+
+.name {
+  float: left;
+  padding: 0 1.5em;
+}
+
+.tagline {
+  font-size: 1.4em;
+}
+
+@media (min-width: 1025px) {
+.container {
+  width: 80%;
+  max-width: 1250px;
+}
+
+.primary,
+.secondary {
+  width: 35%
+}
+.tertiary {
+  width: 30%
+}
+
+.col {
+  float: left;
+  padding: 0 1em;
+}
+
+}
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
